@@ -1,0 +1,150 @@
+@font-face {
+    font-family: thebring;
+    src: url(../fonts/Milk\ And\ Honey.ttf);
+}
+
+@font-face {
+    font-family: click;
+    src: url(../fonts/Action\ Man\ Bold.ttf);
+}
+
+body {
+    margin: center;
+    font-family: thebring;
+}
+
+/* Global */
+
+.line-1 {
+    position: relative;
+    top: 3%;
+    width: 24em;
+    margin: 1 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: red;
+    
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 5s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 16em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.bt {
+    background-color: red;
+    padding: 10px 10px 10px 10px;
+    border-radius: 100px;
+    border: 0px solid;
+
+}
+
+.bt:hover {
+    background-color: purple;
+    padding: 10px 10px 10px 10px;
+    border-radius: 100px;
+    border: 0px solid;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: click;
+}
+
+a:hover {
+    text-decoration: none;
+    color: yellow;
+    font-size: large;
+    font-family: click;
+}
+
+
+.ludo {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+
+@media(max-width:375px) {
+    .table1 {
+        height: 200px;
+        width: 200px;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .ludo {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media(max-width:414px) {
+    .table1 {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 414px) {
+    .ludo {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:320px) {
+    .table1 {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ludo {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media(max-width:280px) {
+    .table1 {
+        background-size: 60px;
+    }
+}
+
+@media (max-width: 280px) {
+    .ludo {
+        font-size: 10px;
+        text-align: center;
+    }
+}
